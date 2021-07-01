@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'UCL Gegraphy Docker Image'
-copyright = '2020, J Gomez-Dans, P Lewis, F Yin'
-author = 'J Gómez-Dans, P Lewis, F Yin'
+project = 'PMIP past2future analyzer'
+copyright = '2021, A Zhao et al '
+author = 'A Zhao et al'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'

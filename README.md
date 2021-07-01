@@ -8,3 +8,6 @@ It contains several elements of summary data for PMIP4-CMIP6 and PMIP3-CMIP5, wh
 You are welcome to use this resource as a repository of summary data, and download individual files. The most convenient manner to do this is to clone the repository with git, or download a zip file of it, using the button above. It would be great if you would contribute your own analysis scripts to the effort, which you can do by forking the repository and then sending us a pull request. 
 
 We have invested some effort into making this resource be more than just place to hold data and code, but to also become a research tool in itself. You can download a docker image of this whole repository. This image not includes the code and data, but also bundles in all the required software needed to interact visually with the data through Jupyter and create your own plots of the data.
+
+[![Documentation Status](https://readthedocs.org/projects/pmip-p2fvar-analyzer/badge/?version=latest)](https://pmip-p2fvar-analyzer.readthedocs.io/en/latest/?badge=latest)
+      
