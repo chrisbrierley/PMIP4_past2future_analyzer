@@ -1,18 +1,26 @@
 ;=================================================================================================
 ; These functions are not required to run the CVDP software.
-; Rather they are aimed at operating on resultant cvdp_enso.*.nc output files
+; Rather they are aimed at operating on resultant cvdp_data.*.nc output files
 ; The aim of them is to allow easy plotting of say
 ;    - change in climate mode between two runs
 ;    - ensemble mean plots for certain experiments
 ;    - difference with observations
 ;
-; Author: Chris Brierley, from Summer 2017
-;         Forked off and rejigged for this repository in Summer 2019
+; Author: Chris Brierley, started in Summer 2017
+;         Forked off and rejigged for Brown et al (2020) in Summer 2019
+;         Tidied up and moved to the past2future analyzer in Summer 2020
 ;
 ;
-; NOTE: all programs assume filenames like modelname_exptname.cvdp_enso.Y-Y.nc
-;  The cvdp_enso files download from http://www.cesm.ucar.edu/working_groups/CVC/cvdp/data-repository.html
-;  will need to be modified through e.g. "rename .cvdp_ rcp26.cvdp_ *.cvdp_enso.*.nc"
+; NOTE: all programs assume filenames of the form exptname/modelname_exptname.cvdp_data.Y-Y.nc
+;  The cvdp_data files download from http://www.cesm.ucar.edu/working_groups/CVC/cvdp/data-repository.html
+;  will need to untarred in a directory of the experiment name and tidied up:
+;     > cd $data_dir/ssp585
+;     > wget http://webext.cgd.ucar.edu/Multi-Case/CVDP_repository/cmip6.ssp585/cmip6.ssp585.cvdp_data.tar
+;     > tar -xf cmip6.ssp585.cvdp_data.tar
+;  REMEMBER: these files use a subtly different version of CVDP. 
+;            - Monsoon, IPCC regions and sea ice area diagnostics will be missing.
+;            - Less information about IOD, AMM, and ATL3
+;            - Definition of AMOC differs!   
 
 ;=================================================================================================
 ; Check that the user-specified climatological period is within the time range of the data

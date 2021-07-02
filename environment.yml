@@ -1,4 +1,4 @@
-name: PMIP4_p2f
+name: pmip_past2future_analyzer
 channels:
   - conda-forge
   - defaults
